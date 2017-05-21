@@ -18,4 +18,4 @@ RUN apt-get update && \
   apt-get autoremove -y
   
 #  Get the encrypted dashboard folder from git
-RUN /bin/bash -c 'git clone https://github.com/chipoglesby/encryptedDashboard.git'
+RUN git clone https://github.com/chipoglesby/encryptedDashboard.git
