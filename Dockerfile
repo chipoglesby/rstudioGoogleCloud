@@ -11,7 +11,4 @@ MAINTAINER Chip Oglesby
 
 # Prepare the image.
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y -qq --no-install-recommends wget unzip python php5-mysql php5-cli php5-cgi openjdk-7-jre-headless openssh-client python-openssl && apt-get clean
-
-#  Get the encrypted dashboard folder from git
-RUN git clone https://github.com/chipoglesby/encryptedDashboard.git
+RUN apt-get update && apt-get install -y -qq --no-install-recommends git wget unzip python php5-mysql php5-cli php5-cgi openjdk-7-jre-headless openssh-client python-openssl && apt-get clean && git clone https://github.com/chipoglesby/encryptedDashboard.git
