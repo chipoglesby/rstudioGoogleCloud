@@ -4,7 +4,7 @@
 ############################################################
 
 # Set the base image to Ubuntu
-FROM gcr.io/google-containers/debian
+FROM gcr.io/google-containers/debian-8-jessie-v20170426
 
 # File Author
 MAINTAINER Chip Oglesby
