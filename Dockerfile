@@ -15,11 +15,7 @@ RUN apt-get update && \
   apt-get install git && \
   apt-get clean -y && \
   apt-get autoclean -y && \
-  apt-get autoremove -y && \
-  rm -rf /usr/share/locale/* && \
-  rm -rf /var/cache/debconf/*-old && \
-  rm -rf /var/lib/apt/lists/* && \
-  rm -rf /usr/share/doc/*
-
+  apt-get autoremove -y
+  
 #  Get the encrypted dashboard folder from git
 RUN /bin/bash -c 'git clone https://github.com/chipoglesby/encryptedDashboard.git'
