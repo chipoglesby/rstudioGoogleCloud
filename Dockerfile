@@ -1,5 +1,6 @@
 # Set the base image to Google Debian
-FROM launcher.gcr.io/google/debian8:latest
+# FROM launcher.gcr.io/google/debian8:latest
+FROM google/cloud-sdk
 
 # File Author
 MAINTAINER Chip Oglesby
